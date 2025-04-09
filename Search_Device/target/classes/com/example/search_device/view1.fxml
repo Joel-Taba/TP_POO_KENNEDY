@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="568.0" prefWidth="788.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.search_device.View1Controller">
+   <children>
+      <Label alignment="CENTER" prefHeight="38.0" prefWidth="788.0" text="STOLEN COMPUTERS" />
+      <Button fx:id="DeleteButton" layoutY="61.0" mnemonicParsing="false" onAction="#ActionDelete" style="-fx-background-color: red;" text="Delete">
+         <font>
+            <Font name="Lohit Tamil Classical" size="13.0" />
+         </font>
+      </Button>
+      <Line endX="687.0" layoutX="101.0" layoutY="89.0" startX="-100.0" stroke="RED" />
+      <Button fx:id="AddButton" layoutX="669.0" layoutY="38.0" mnemonicParsing="false" onAction="#ActionAdd" prefHeight="24.0" prefWidth="117.0" style="-fx-background-color: green;" text="Add Device" />
+      <TextField fx:id="ResearchDevice" layoutX="554.0" layoutY="90.0" onAction="#ActionSearch" prefHeight="24.0" prefWidth="220.0" promptText="Enter N°Serie" />
+      <Text layoutX="499.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search:" wrappingWidth="61.0" />
+      <TableView fx:id="tableView" editable="true" layoutY="115.0" prefHeight="453.0" prefWidth="788.0">
+        <columns>
+          <TableColumn fx:id="NumSerieCol" prefWidth="97.0" text="N° Serie" />
+          <TableColumn fx:id="EmailCol" prefWidth="131.0" text="E-mail" />
+            <TableColumn fx:id="MarqueCol" prefWidth="122.0" text="Marque" />
+            <TableColumn fx:id="NomProprioCol" minWidth="0.0" prefWidth="99.0" text="Proprietaire" />
+            <TableColumn fx:id="NumTelCol" minWidth="4.0" prefWidth="90.0" text="N° Tel" />
+            <TableColumn fx:id="DatePerteCol" prefWidth="120.0" text="Date Perte" />
+            <TableColumn fx:id="ActionPossibleCol" prefWidth="122.0" text="Action" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

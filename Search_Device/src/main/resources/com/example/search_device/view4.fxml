@@ -1,0 +1,16 @@
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns:fx="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.search_device.View4Controller">
+    <Label text="Numéro de Série :" layoutX="20" layoutY="20"/>
+    <Label fx:id="lblNumSerie" layoutX="150" layoutY="20"/>
+    <Label text="Email :" layoutX="20" layoutY="50"/>
+    <Label fx:id="lblEmail" layoutX="150" layoutY="50"/>
+    <Label text="Marque :" layoutX="20" layoutY="80"/>
+    <Label fx:id="lblMarque" layoutX="150" layoutY="80"/>
+    <Label text="Nom Propriétaire :" layoutX="20" layoutY="110"/>
+    <Label fx:id="lblNomProprietaire" layoutX="150" layoutY="110"/>
+    <Label text="Numéro Téléphone :" layoutX="20" layoutY="140"/>
+    <Label fx:id="lblNumTel" layoutX="150" layoutY="140"/>
+    <Label text="Date de Perte :" layoutX="20" layoutY="170"/>
+    <Label fx:id="lblDatePerte" layoutX="150" layoutY="170"/>
+</AnchorPane>
